@@ -1,0 +1,19 @@
+﻿  Building GameAssembly.dll with MsvcWinRtToolChain
+  	Msvc Install Version: 17.0
+  	Msvc Install SDK Directory: C:\Program Files (x86)\Windows Kits\10
+  	Msvc Linker Path: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\ARM64\link.exe
+  	Msvc Compiler Path: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\ARM64\cl.exe
+  
+  	Output directory: C:\Users\DELL\Desktop\Target_prediction_MR\Build Pointing\build\bin\ARM64\Release
+  	Cache directory: C:\Users\DELL\Desktop\Target_prediction_MR\Build Pointing\build\obj\il2cppOutputProject\ARM64\Release
+  ObjectFiles: 754 of which compiled: 0
+  Total compilation time: 1147 milliseconds.
+EXEC : error : Unity.IL2CPP.Building.BuilderFailedException: C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\ARM64\link.exe /out:"C:\Users\DELL\Desktop\Target_prediction_MR\Build Pointing\build\obj\il2cppOutputProject\ARM64\Release\linkresult_95B792783458D9A801244E81787ECCBA\GameAssembly.dll" /ignore:4206 /DEBUG /INCREMENTAL:NO /LARGEADDRESSAWARE /NXCOMPAT /DYNAMICBASE /NOLOGO /TLBID:1 /OPT:REF /OPT:ICF /DLL /IGNORE:4104 /NODEFAULTLIB:uuid.lib "Shcore.lib" "WindowsApp.lib" "Crypt32.lib" "Iphlpapi.lib" "C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\il2cpp\ARM64\Release\baselib.dll.lib" /LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\lib\ARM64\store" /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\arm64" /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\ucrt\arm64" /APPCONTAINER /SUBSYSTEM:WINDOWS /NODEFAULTLIB:ole32.lib /NODEFAULTLIB:kernel32.lib @"C:\Users\DELL\AppData\Local\Temp\tmp44DB.tmp"
+  
+LINK : fatal error LNK1102: out of memory
+  
+     at Unity.IL2CPP.Building.CppProgramBuilder.PostprocessObjectFiles(HashSet`1 objectFiles, CppToolChainContext toolChainContext)
+     at Unity.IL2CPP.Building.CppProgramBuilder.Build(IBuildStatistics& statistics)
+     at il2cpp.Compilation.CompilationDriver.Run(RuntimePlatform platform, BuildingOptions buildingOptions, ReadOnlyCollection`1 matchedAssemblyMethodSourceFiles)
+     at il2cpp.Program.DoRun(String[] args, RuntimePlatform platform, BuildingOptions buildingOptions, Boolean throwExceptions)
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.MakeFile.Targets(45,5): error MSB3073: The command ""C:\Users\DELL\Desktop\Target_prediction_MR\Build Pointing\Il2CppOutputProject\\IL2CPP\build\deploy\netcoreapp3.1\il2cpp.exe" --libil2cpp-static --compile-cpp -architecture=ARM64 -configuration=Release -platform=winrt -outputpath="C:\Users\DELL\Desktop\Target_prediction_MR\Build Pointing\\build\bin\ARM64\Release\GameAssembly.dll" --data-folder="C:\Users\DELL\Desktop\Target_prediction_MR\Build Pointing\\build\bin\ARM64\Release\\" -cachedirectory="C:\Users\DELL\Desktop\Target_prediction_MR\Build Pointing\\build\obj\il2cppOutputProject\ARM64\Release\\" -generatedcppdir="C:\Users\DELL\Desktop\Target_prediction_MR\Build Pointing\Il2CppOutputProject\\Source"  --incremental-g-c-time-slice=3 --baselib-directory="C:\Program Files\Unity\Editor\Data\PlaybackEngines\MetroSupport\Players\UAP\il2cpp\ARM64\Release" --avoid-dynamic-library-copy --profiler-report --additional-defines=WINDOWS_UWP --additional-defines=UNITY_UWP --additional-defines=UNITY_WSA_10_0 --additional-defines=UNITY_WSA --additional-defines=UNITY_WINRT --additional-defines=PLATFORM_WINRT -dotnetprofile=unityaot -verbose --relative-data-path=Data/il2cpp_data --map-file-parser="C:\Users\DELL\Desktop\Target_prediction_MR\Build Pointing\Il2CppOutputProject\\IL2CPP\MapFileParser\MapFileParser.exe"" exited with code 4.

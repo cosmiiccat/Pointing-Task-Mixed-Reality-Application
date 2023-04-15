@@ -1,0 +1,1 @@
+C:\Users\DELL\Desktop\Target_prediction_MR\Build New 1\target_pred_MR\target_pred_MR.vcxproj;arm64
